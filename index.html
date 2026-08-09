@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="todo">
+
+        <header>
+            <h1>Benjamín Emanuel Hermosilla Schick</h1>
+            <p class="subtitulo">Estudiante de Ingeniería Civil Informática</p>
+        </header>
+
+        <section class="perfil">
+            <img src="perfil.png" alt="mi foto" class="foto-perfil">
+            
+            <div>
+                <h2>Sobre Mí</h2>
+                <ul>
+                    <li><b>Edad:</b> 22 años</li>
+                    <li><b>Origen:</b> Ercilla, Chile</li>
+                    <li><b>Residencia:</b> Temuco, Chile</li>
+                </ul>
+
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Escuchar música</li>
+                    <li>Aprender y experimentar con IA</li>
+                    <li>Leer manga y manhwa</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Conocimientos Técnicos</h2>
+            <div class="conocimientos">
+                <p><b>Python:</b> Básico</p>
+                <p><b>Java:</b> Básico</p>
+                <p><b>MATLAB:</b> Básico</p>
+                <p><b>SQL:</b> Básico</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proyectos</h2>
+
+            <article class="tarjeta">
+                <p><b>App Android de Subtitulado con IA Local</b></p>
+                <p>Aplicación móvil 100% offline para generar subtítulos en español a partir de videos en inglés. Me encargué de la arquitectura, diseño lógico e instrucción a agentes de IA para su desarrollo. Extrae audio con FFmpeg, transcribe voz a texto con un modelo ligero de Whisper y traduce con Google ML Kit.</p>
+                <p class="teg" ><b>Kotlin - Whisper AI - Google ML Kit - FFmpeg</b></p>
+            </article>
+
+            <article class="tarjeta">
+                <p><b>App Controladora de Audífonos Bluetooth</b></p>
+                <p>Adaptación y rediseño de una aplicación open-source en GitHub para vincularla a mis audífonos personales, modernizando su interfaz visual y ajustando el flujo de control del dispositivo.</p>
+                <p class="teg" ><b>Kotlin</b></p>
+            </article>
+
+            <article class="tarjeta">
+                <p><b>Mini Estación Climática IoT</b></p>
+                <p>Sistema IoT de monitoreo ambiental con ESP32 que captura temperatura y humedad vía sensor DHT22. Transmite datos mediante protocolo MQTT hacia una app en Android, la cual permite monitorear los datos en tiempo real y controlar un ventilador accionado por un puente H (L298N).</p>
+                <p class="teg"><b>ESP32 - Sensor DHT22 - L298N - Kotlin - MQTT</b></p>
+            </article>
+
+            <article class="tarjeta">
+                <p><b>Auto Esquivador de Obstáculos</b></p>
+                <p>Vehículo robótico autónomo desarrollado con Arduino. Utiliza un sensor ultrasónico para medir distancias en tiempo real y controlar motores mediante el controlador L298N para maniobrar y esquivar obstáculos.</p>
+                <p class="teg"><b>Arduino - Sensor Ultrasónico - L298N</b></p>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+</html>
