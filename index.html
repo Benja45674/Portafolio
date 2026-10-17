@@ -1,78 +1,148 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Benjamín Hermosilla</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        .font-serif-title {
+            font-family: 'Newsreader', serif;
+        }
+
+        .font-mono-code {
+            font-family: 'JetBrains Mono', monospace;
+        }
+    </style>
 </head>
-<body>
 
-    <main class="todo">
+<body class="bg-zinc-950 text-zinc-200 min-h-screen">
 
-        <header>
-            <h1>Benjamín Emanuel Hermosilla Schick</h1>
-            <p class="subtitulo">Estudiante de Ingeniería Civil Informática</p>
+    <main class="max-w-4xl mx-auto px-4 py-12">
+
+        <header class="mb-8 border-b border-zinc-800 pb-6">
+            <h1 class="text-3xl sm:text-4xl font-serif-title text-white">
+                Benjamín Emanuel Hermosilla Schick
+            </h1>
+            <p class="text-sm sm:text-base text-zinc-400 mt-1.5">
+                Estudiante de Ingeniería Civil Informática
+            </p>
         </header>
 
-        <section class="perfil">
-            <img src="perfil.png" alt="mi foto" class="foto-perfil">
-            
-            <div>
-                <h2>Sobre Mí</h2>
-                <ul>
-                    <li><b>Edad:</b> 22 años</li>
-                    <li><b>Origen:</b> Ercilla, Chile</li>
-                    <li><b>Residencia:</b> Temuco, Chile</li>
-                </ul>
+        <section class="mb-8">
+            <h2 class="font-serif-title text-lg font-bold text-white mb-4">Sobre mí</h2>
 
-                <h2>Hobbies</h2>
-                <ul>
-                    <li>Escuchar música</li>
-                    <li>Aprender y experimentar con IA</li>
-                    <li>Leer manga y manhwa</li>
-                </ul>
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-4">
+                <div class="md:col-span-8 bg-zinc-900 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between">
+                    <div class="flex items-center gap-2 text-xs font-mono-code uppercase text-zinc-400 mb-4">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                        </svg>
+                        <span>Datos Generales</span>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                        <div class="bg-zinc-800 border border-zinc-700 rounded-2xl p-4">
+                            <p class="text-xs text-zinc-500 mb-1">Edad</p>
+                            <p class="text-sm sm:text-base font-semibold text-white">22 años</p>
+                        </div>
+                        <div class="bg-zinc-800 border border-zinc-700 rounded-2xl p-4">
+                            <p class="text-xs text-zinc-500 mb-1">Origen</p>
+                            <p class="text-sm sm:text-base font-semibold text-white">Ercilla, Chile</p>
+                        </div>
+                        <div class="bg-zinc-800 border border-zinc-700 rounded-2xl p-4">
+                            <p class="text-xs text-zinc-500 mb-1">Residencia</p>
+                            <p class="text-sm sm:text-base font-semibold text-white">Temuco, Chile</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-4 bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                    <div class="flex items-center gap-2 text-xs font-mono-code uppercase text-zinc-400 mb-4">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path>
+                        </svg>
+                        <span>Intereses</span>
+                    </div>
+
+                    <ul class="space-y-3 text-sm text-zinc-300">
+                        <li class="flex items-start gap-2.5">
+                            <span class="text-zinc-500 text-xs mt-0.5 select-none">▷</span>
+                            <span>Aprender y experimentar con herramientas de IA</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <span class="text-zinc-500 text-xs select-none">▷</span>
+                            <span>Escuchar música</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
-        <section>
-            <h2>Conocimientos Técnicos</h2>
-            <div class="conocimientos">
-                <p><b>Python:</b> Básico</p>
-                <p><b>Java:</b> Básico</p>
-                <p><b>MATLAB:</b> Básico</p>
-                <p><b>SQL:</b> Básico</p>
-            </div>
+        <section class="mb-8">
+            <h2 class="font-serif-title text-lg font-bold text-white mb-4">Proyectos</h2>
+            <div id="lista-proyectos" class="flex flex-col gap-4"></div>
         </section>
 
         <section>
-            <h2>Proyectos</h2>
-
-            <article class="tarjeta">
-                <p><b>App Android de Subtitulado con IA Local</b></p>
-                <p>Aplicación móvil 100% offline para generar subtítulos en español a partir de videos en inglés. Me encargué de la arquitectura, diseño lógico e instrucción a agentes de IA para su desarrollo. Extrae audio con FFmpeg, transcribe voz a texto con un modelo ligero de Whisper y traduce con Google ML Kit.</p>
-                <p class="teg" ><b>Kotlin - Whisper AI - Google ML Kit - FFmpeg</b></p>
-            </article>
-
-            <article class="tarjeta">
-                <p><b>App Controladora de Audífonos Bluetooth</b></p>
-                <p>Adaptación y rediseño de una aplicación open-source en GitHub para vincularla a mis audífonos personales, modernizando su interfaz visual y ajustando el flujo de control del dispositivo.</p>
-                <p class="teg" ><b>Kotlin</b></p>
-            </article>
-
-            <article class="tarjeta">
-                <p><b>Mini Estación Climática IoT</b></p>
-                <p>Sistema IoT de monitoreo ambiental con ESP32 que captura temperatura y humedad vía sensor DHT22. Transmite datos mediante protocolo MQTT hacia una app en Android, la cual permite monitorear los datos en tiempo real y controlar un ventilador accionado por un puente H (L298N).</p>
-                <p class="teg"><b>ESP32 - Sensor DHT22 - L298N - Kotlin - MQTT</b></p>
-            </article>
-
-            <article class="tarjeta">
-                <p><b>Auto Esquivador de Obstáculos</b></p>
-                <p>Vehículo robótico autónomo desarrollado con Arduino. Utiliza un sensor ultrasónico para medir distancias en tiempo real y controlar motores mediante el controlador L298N para maniobrar y esquivar obstáculos.</p>
-                <p class="teg"><b>Arduino - Sensor Ultrasónico - L298N</b></p>
-            </article>
+            <h2 class="font-serif-title text-lg font-bold text-white mb-4">Competencias Técnicas</h2>
+            <div id="lista-competencias" class="grid gap-4"></div>
         </section>
 
     </main>
 
+    <script src="datos.js"></script>
+    <script>
+        const tarjetaProyecto = (item) => `
+            <article class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6 flex flex-col justify-between">
+                <div>
+                    <h3 class="font-serif-title font-bold text-white text-lg mb-1.5">${item.titulo}</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed mb-4">${item.descripcion}</p>
+                </div>
+                
+                <div class="flex flex-wrap items-center justify-between gap-3 pt-2">
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        ${item.tags.map(t => `<span class="bg-zinc-800 text-zinc-200 font-mono-code px-3 py-1 rounded-full border border-zinc-700">${t}</span>`).join('')}
+                    </div>
+                    ${item.github ? `
+                    <a href="${item.github}" target="_blank" rel="noopener noreferrer" 
+                       class="ml-auto text-xs font-mono-code text-zinc-200 hover:text-white bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 px-4 py-1.5 rounded-full transition-colors shrink-0">
+                        Ver proyecto
+                    </a>` : ''}
+                </div>
+            </article>
+        `;
+
+        const tarjetaCompetencia = (item) => `
+            <div class="bg-zinc-900 border border-zinc-800 rounded-3xl p-6">
+                <h3 class="font-semibold text-white text-sm mb-4">${item.categoria}</h3>
+                <div class="flex flex-wrap gap-2 text-xs font-mono-code">
+                    ${item.habilidades.map(h => `<span class="bg-zinc-800 text-zinc-200 px-3 py-1.5 rounded-xl border border-zinc-700">${h}</span>`).join('')}
+                </div>
+            </div>
+        `;
+
+        document.getElementById('lista-proyectos').innerHTML = DATOS.proyectos.map(tarjetaProyecto).join('');
+
+        const contCompetencias = document.getElementById('lista-competencias');
+        const totalCompetencias = DATOS.competencias.length;
+
+        let columnasClase = 'grid-cols-1 md:grid-cols-3';
+        if (totalCompetencias === 1) {
+            columnasClase = 'grid-cols-1';
+        } else if (totalCompetencias === 2) {
+            columnasClase = 'grid-cols-1 md:grid-cols-2';
+        }
+
+        contCompetencias.className = `grid ${columnasClase} gap-4`;
+        contCompetencias.innerHTML = DATOS.competencias.map(tarjetaCompetencia).join('');
+    </script>
+
 </body>
+
 </html>
