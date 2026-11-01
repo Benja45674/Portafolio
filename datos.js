@@ -1,11 +1,6 @@
 const DATOS = {
     proyectos: [
-        {
-            titulo: "Catálogo de Pokémon (Consumo de PokéAPI)",
-            descripcion: "Aplicación web desarrollada en React que consume la PokéAPI pública mediante fetch y useEffect para renderizar dinámicamente un listado de recursos con imágenes ,número de la Pokédex y nombres.",
-            tags: ["React", "JavaScript", "PokéAPI", "Tailwind CSS", "Vite"],
-            github: "https://github.com/Benja45674/poke"
-        },
+        
         {
             titulo: "App Android de Subtitulado con IA Local",
             descripcion: "Aplicación móvil 100% offline para transcribir voz a texto y generar subtítulos sincronizados traducidos al español. Utiliza Whisper.cpp integrado con C++ (NDK) para procesamiento local en el dispositivo, FFmpeg para extracción de audio y Google ML Kit para traducción on-device.",
@@ -29,6 +24,12 @@ const DATOS = {
             descripcion: "Aplicación web responsiva para la gestión ágil de tareas personales, permitiendo agregar, completar y eliminar ítems con actualización dinámica del estado.",
             tags: ["React", "JavaScript", "Tailwind CSS"],
             github: "https://github.com/Benja45674/Todo_list"
+        },
+        {
+            titulo: "Catálogo de Pokémon (Consumo de PokéAPI)",
+            descripcion: "Aplicación web desarrollada en React que consume la PokéAPI pública mediante fetch y useEffect para renderizar dinámicamente un listado de recursos con imágenes ,número de la Pokédex y nombres.",
+            tags: ["React", "JavaScript", "PokéAPI", "Tailwind CSS", "Vite"],
+            github: "https://github.com/Benja45674/poke"
         }
     ],
     competencias: [
